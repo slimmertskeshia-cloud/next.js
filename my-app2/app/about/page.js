@@ -1,14 +1,12 @@
-import Link from "next/link";
+"use client";
+import { useState } from "react";
 
-export default function HomePage() {
+export default function AboutPage() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="p-8 flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Home Page</h1>
-      <nav className="flex gap-4">
-        <Link href="/" className="btn btn-primary">Home</Link>
-        <Link href="/about" className="btn btn-secondary">About</Link>
-        <Link href="/about/contact" className="btn btn-accent">Contact</Link>
-      </nav>
+    <div className="p-8">
+      <h1 className="text-2xl font-bold">About Page</h1>
     </div>
   );
 }
